@@ -257,11 +257,10 @@ module.exports = {
             const ticketChannel = await client.channels.fetch(ticketChannelId);
             if (ticketChannel) {
               const fixedTicketEmbed = new EmbedBuilder()
-                .setColor('#0099ff')
+                .setColor('#bc8787')
                 .setTitle('⋆౨ৎ˚⟡˖ ࣪')
                 .setImage('https://media.discordapp.net/attachments/795465906808946691/890050778838999100/sparklegif.gif?ex=668c95e2&is=668b4462&hm=076b5b4ea027231e227ee8133d3a3af6d43c0820d78114a667555428dbaf3075&')
               .setDescription('𝗰𝗹𝗶𝗰𝗸 𝘁𝗵𝗲 𝗯𝘂𝘁𝘁𝗼𝗻 𝗯𝗲𝗹𝗼𝘄 𝘁𝗼 𝗰𝗿𝗲𝗮𝘁𝗲 𝗮 𝗻𝗲𝘄 𝘁𝗶𝗰𝗸𝗲𝘁.n\n' +
-                 '**𝙩𝙞𝙘𝙠𝙚𝙩 𝙜𝙪𝙞𝙙𝙚𝙡𝙞𝙣𝙚𝙨:**\n' +
                  '- 𝘦𝘮𝘱𝘵𝘺 𝘵𝘪𝘤𝘬𝘦𝘵𝘴 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘱𝘦𝘳𝘮𝘪𝘵𝘵𝘦𝘥.\n' +
                  '- 𝘣𝘰𝘮𝘪𝘦 𝘰𝘯 𝘥𝘢 𝘸𝘢𝘺.')
               .setFooter({ text: '𝙢𝙚𝙤𝙬 𝙢𝙚𝙤𝙬', iconURL:'https://cdn.discordapp.com/emojis/1243174809312038912.gif'});
