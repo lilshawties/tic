@@ -58,7 +58,7 @@ async function closeTicket(interaction, ticketChannel) {
     
                       
       const confirmationEmbed = new EmbedBuilder()
-    .setTitle('.Ϟ 𝘁𝗶𝗰𝗸𝗲𝘁 𝗰𝗹𝗼𝘀𝗲𝗱.)
+    .setTitle('.Ϟ 𝘁𝗶𝗰𝗸𝗲𝘁 𝗰𝗹𝗼𝘀𝗲𝗱.')
         .setColor('#4a6c89')
   .setDescription(`**𝙪𝙧 𝙩𝙞𝙘𝙠𝙚𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙘𝙡𝙤𝙨𝙚𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮.** \n\n- ᓚᘏᗢ `)
         .setImage('https://cdn.discordapp.com/attachments/1237484291219259465/1243033742935592990/c32c6daaa4d17c9b3b0f0d1eabe58f72.gif?ex=668ca5e2&is=668b5462&hm=039325430757774c69d842b6b95863f5122d48fa327d290843a990ea4c93d227&')
