@@ -152,7 +152,10 @@ async function createTicket(interaction, ticketChannel) {
       .setTitle('𐙚˙⋆ .˚')
      .setDescription(`➣ **𝙩𝙞𝙘𝙠𝙚𝙩 𝙤𝙥𝙚𝙣𝙚𝙙 𝙗𝙮 ${interaction.user}**\n☆。 **𝘁𝗶𝗰𝗸𝗲𝘁 𝗻𝘂𝗺𝗯𝗲𝗿: ${ticketNumber}**\n\n\- 𝗰𝗵𝗲𝗰𝗸 𝗿𝗮𝘁𝗲 𝗼𝘄𝗼 𝗰𝗮𝘀𝗵: <#1243917131821617172>\n- ニャー ？！`)
     .setFooter({ text: '𝙢𝙚𝙤𝙬 𝙢𝙚𝙤𝙬 ', iconURL: 'https://cdn.discordapp.com/emojis/1243171663051489350.gif' });
-    
+    const createTicketButton = new ButtonBuilder()
+      .setCustomId('close_ticket')
+      .setLabel('✶ 𝗰𝗹𝗼𝘀𝗲 𝘁𝗶𝗰𝗸𝗲𝘁')
+      .setStyle(ButtonStyle.Danger);
 
     await tempChannel.send({ embeds: [embedMessage], components: [new ActionRowBuilder().addComponents(createTicketButton)] });
       await interaction.reply({ content: '𝙩𝙞𝙘𝙠𝙚𝙩 𝙘𝙧𝙚𝙖𝙩𝙚𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮.', ephemeral: true });
