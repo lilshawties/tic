@@ -152,10 +152,7 @@ async function createTicket(interaction, ticketChannel) {
       .setTitle('𐙚˙⋆ .˚')
      .setDescription(`➣ **𝙩𝙞𝙘𝙠𝙚𝙩 𝙤𝙥𝙚𝙣𝙚𝙙 𝙗𝙮 ${interaction.user}**\n☆。 **𝘁𝗶𝗰𝗸𝗲𝘁 𝗻𝘂𝗺𝗯𝗲𝗿: ${ticketNumber}**\n\n\- 𝗰𝗵𝗲𝗰𝗸 𝗿𝗮𝘁𝗲 𝗼𝘄𝗼 𝗰𝗮𝘀𝗵: <#1243917131821617172>\n- ニャー ？！`)
     .setFooter({ text: '𝙢𝙚𝙤𝙬 𝙢𝙚𝙤𝙬 ', iconURL: 'https://cdn.discordapp.com/emojis/1243171663051489350.gif' });
-    const createTicketButton = new ButtonBuilder()
-      .setCustomId('close_ticket')
-      .setLabel('✶ 𝗰𝗹𝗼𝘀𝗲 𝘁𝗶𝗰𝗸𝗲𝘁')
-      .setStyle(ButtonStyle.Danger);
+    
 
     await tempChannel.send({ embeds: [embedMessage], components: [new ActionRowBuilder().addComponents(createTicketButton)] });
       await interaction.reply({ content: '𝙩𝙞𝙘𝙠𝙚𝙩 𝙘𝙧𝙚𝙖𝙩𝙚𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮.', ephemeral: true });
@@ -164,7 +161,7 @@ async function createTicket(interaction, ticketChannel) {
      const confirmationEmbed = new EmbedBuilder()
         .setTitle('ణ 𝘁𝗶𝗰𝗸𝗲𝘁 𝗼𝗽𝗲𝗻𝗲𝗱')
             .setColor('#bc8787')
-      .setDescription(` **𝙮𝙤𝙪𝙧 𝙩𝙞𝙘𝙠𝙚𝙩 𝙣𝙪𝙢𝙗𝙚𝙧 𝙞𝙨 ${ticketNumber} ** \n\n-  𝙗𝙤𝙢𝙞𝙚 𝙤𝙣 𝙙𝙖 𝙬𝙖𝙮\n- ニャー ？！`)
+      .setDescription(` **𝙮𝙤𝙪𝙧 𝙩𝙞𝙘𝙠𝙚𝙩 𝙣𝙪𝙢𝙗𝙚𝙧 𝙞𝙨 ${ticketNumber} ** \n-  𝙗𝙤𝙢𝙞𝙚 𝙤𝙣 𝙙𝙖 𝙬𝙖𝙮\n- ニャー ？！`)
        .setImage('https://cdn.discordapp.com/attachments/1237484291219259465/1258970087726252072/0c753154257af31d1848edba62354a20.gif?ex=668c9dc3&is=668b4c43&hm=2f792824c4cd23615df0993b8944dad7c543e3167c077b8f54a69440c406928a&')
     .setFooter({ text: '𝙢𝙚𝙤𝙬 𝙢𝙚𝙤𝙬 ', iconURl:'https://cdn.discordapp.com/emojis/1243171663051489350.gif'})
      .setTimestamp();
