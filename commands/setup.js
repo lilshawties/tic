@@ -58,11 +58,11 @@ async function closeTicket(interaction, ticketChannel) {
     
                       
       const confirmationEmbed = new EmbedBuilder()
-    .setTitle('🔴 Ticket Closed')
-        .setColor('#ff0000')
-  .setDescription(`**Your ticket has been closed successfully.** \n\n- If you have any further questions, feel free to open a new ticket.`)
-        .setImage('https://cdn.discordapp.com/attachments/1209503146485747723/1209507551184556054/2.png?ex=65e72caf&is=65d4b7af&hm=30b0b243fe24521a08f0cc49025bc28ba0bf78be82a1d02013c0c27c190d9ada&')
-    .setFooter({ text: 'Thank You for Using Our Ticket Service!', iconURL:'https://cdn.discordapp.com/attachments/1209503146485747723/1209503206871400458/5620-ticket.png?ex=65e728a4&is=65d4b3a4&hm=93bae44d478db895734ef9dfe86325b453e905c64101a20161075b153b91490d&'})
+    .setTitle('.Ϟ 𝘁𝗶𝗰𝗸𝗲𝘁 𝗰𝗹𝗼𝘀𝗲𝗱.)
+        .setColor('#4a6c89')
+  .setDescription(`**𝙪𝙧 𝙩𝙞𝙘𝙠𝙚𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙘𝙡𝙤𝙨𝙚𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮.** \n\n- ᓚᘏᗢ `)
+        .setImage('https://cdn.discordapp.com/attachments/1237484291219259465/1243033742935592990/c32c6daaa4d17c9b3b0f0d1eabe58f72.gif?ex=668ca5e2&is=668b5462&hm=039325430757774c69d842b6b95863f5122d48fa327d290843a990ea4c93d227&')
+    .setFooter({ text: '𝙩𝙮𝙨𝙢 ⁼꒳⁼ ', iconURL:'https://cdn.discordapp.com/emojis/1243174763535536182.gif'})
      .setTimestamp();
 await ticketOwner.send({ embeds: [confirmationEmbed] });
 
@@ -148,25 +148,25 @@ async function createTicket(interaction, ticketChannel) {
     await tempChannel.setName(newChannelName, 'Updating channel name to include ticket number');
 
     const embedMessage = new EmbedBuilder()
-      .setColor('#0099ff')
-      .setTitle('Ticket Details')
-     .setDescription(`📩 **Ticket opened by ${interaction.user}**\n▶️ **Ticket Number: ${ticketNumber}**\n\n\- Please provide a detailed description of your issue or request below.\n- Our support team will assist you as soon as possible.`)
-    .setFooter({ text: 'Your satisfaction is our priority ', iconURL: 'https://cdn.discordapp.com/attachments/1209503146485747723/1209503207177457714/6280-2.gif?ex=65e728a4&is=65d4b3a4&hm=518c747e5e4fb9306c746b1588dd220fe185c7083254731d1c904f8042ad9f61&' });
+      .setColor('#bc8787')
+      .setTitle('𐙚˙⋆ .˚')
+     .setDescription(`➣ **𝙩𝙞𝙘𝙠𝙚𝙩 𝙤𝙥𝙚𝙣𝙚𝙙 𝙗𝙮 ${interaction.user}**\n☆。 **𝘁𝗶𝗰𝗸𝗲𝘁 𝗻𝘂𝗺𝗯𝗲𝗿: ${ticketNumber}**\n\n\- 𝗰𝗵𝗲𝗰𝗸 𝗿𝗮𝘁𝗲 𝗼𝘄𝗼 𝗰𝗮𝘀𝗵: <#1243917131821617172>\n- ニャー ？！`)
+    .setFooter({ text: '𝙢𝙚𝙤𝙬 𝙢𝙚𝙤𝙬 ', iconURL: 'https://cdn.discordapp.com/emojis/1243171663051489350.gif' });
     const createTicketButton = new ButtonBuilder()
       .setCustomId('close_ticket')
-      .setLabel('🔒 Close Ticket')
+      .setLabel('✶ 𝗰𝗹𝗼𝘀𝗲 𝘁𝗶𝗰𝗸𝗲𝘁')
       .setStyle(ButtonStyle.Danger);
 
     await tempChannel.send({ embeds: [embedMessage], components: [new ActionRowBuilder().addComponents(createTicketButton)] });
-      await interaction.reply({ content: 'Ticket created successfully.', ephemeral: true });
+      await interaction.reply({ content: '𝙩𝙞𝙘𝙠𝙚𝙩 𝙘𝙧𝙚𝙖𝙩𝙚𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮.', ephemeral: true });
     
     const ticketOwner = interaction.user;
      const confirmationEmbed = new EmbedBuilder()
-        .setTitle('✅ Ticket Opened')
-            .setColor('#2bff00')
-      .setDescription(` **Your ticket number is ${ticketNumber} ** \n\n-  Our team will assist you shortly. Please hang tight!\n- Feel free to mention Support team for any urgent assistance.`)
-       .setImage('https://cdn.discordapp.com/attachments/1209503146485747723/1209507551683805204/1.png?ex=65e72caf&is=65d4b7af&hm=3eb4ab1565f7818bf94cdc37343be288cd7ae1792197374ee8d43a82d18cd526&')
-    .setFooter({ text: 'Your satisfaction is our priority! ', iconURl:'https://cdn.discordapp.com/attachments/1209503146485747723/1209503207685103677/8917-blurple-ticket.png?ex=65e728a4&is=65d4b3a4&hm=dc0e876211f155590f3d35e543f9d205acee0df356c7d13b07ad675051bc82bf&'})
+        .setTitle('ణ 𝘁𝗶𝗰𝗸𝗲𝘁 𝗼𝗽𝗲𝗻𝗲𝗱')
+            .setColor('#bc8787')
+      .setDescription(` **𝙮𝙤𝙪𝙧 𝙩𝙞𝙘𝙠𝙚𝙩 𝙣𝙪𝙢𝙗𝙚𝙧 𝙞𝙨 ${ticketNumber} ** \n\n-  𝙗𝙤𝙢𝙞𝙚 𝙤𝙣 𝙙𝙖 𝙬𝙖𝙮\n- ニャー ？！`)
+       .setImage('https://cdn.discordapp.com/attachments/1237484291219259465/1258970087726252072/0c753154257af31d1848edba62354a20.gif?ex=668c9dc3&is=668b4c43&hm=2f792824c4cd23615df0993b8944dad7c543e3167c077b8f54a69440c406928a&')
+    .setFooter({ text: '𝙢𝙚𝙤𝙬 𝙢𝙚𝙤𝙬 ', iconURl:'https://cdn.discordapp.com/emojis/1243171663051489350.gif'})
      .setTimestamp();
     await ticketOwner.send({ embeds: [confirmationEmbed] });
     
@@ -258,17 +258,17 @@ module.exports = {
             if (ticketChannel) {
               const fixedTicketEmbed = new EmbedBuilder()
                 .setColor('#0099ff')
-                .setTitle('🎟️ Welcome to Ticket Support')
-                .setImage('https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif')
-              .setDescription('Thank you for choosing our ticket system for support. Please click the button below to create a new ticket.\n\n' +
-                 '**Ticket Guidelines:**\n' +
-                 '- Empty tickets are not permitted.\n' +
-                 '- Please be patient while waiting for a response from our support team.')
-              .setFooter({ text: 'We are here to Help!', iconURL:'https://cdn.discordapp.com/attachments/1209499496732692580/1209514764531924992/1667-yellow-gears.gif?ex=65e73367&is=65d4be67&hm=10e9c542cab73102272ecb710cb58f11e581d7c6e9bf7d7c9da6217cda3928b9&'});
+                .setTitle('⋆౨ৎ˚⟡˖ ࣪')
+                .setImage('https://media.discordapp.net/attachments/795465906808946691/890050778838999100/sparklegif.gif?ex=668c95e2&is=668b4462&hm=076b5b4ea027231e227ee8133d3a3af6d43c0820d78114a667555428dbaf3075&')
+              .setDescription('𝗰𝗹𝗶𝗰𝗸 𝘁𝗵𝗲 𝗯𝘂𝘁𝘁𝗼𝗻 𝗯𝗲𝗹𝗼𝘄 𝘁𝗼 𝗰𝗿𝗲𝗮𝘁𝗲 𝗮 𝗻𝗲𝘄 𝘁𝗶𝗰𝗸𝗲𝘁.n\n' +
+                 '**𝙩𝙞𝙘𝙠𝙚𝙩 𝙜𝙪𝙞𝙙𝙚𝙡𝙞𝙣𝙚𝙨:**\n' +
+                 '- 𝘦𝘮𝘱𝘵𝘺 𝘵𝘪𝘤𝘬𝘦𝘵𝘴 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘱𝘦𝘳𝘮𝘪𝘵𝘵𝘦𝘥.\n' +
+                 '- 𝘣𝘰𝘮𝘪𝘦 𝘰𝘯 𝘥𝘢 𝘸𝘢𝘺.')
+              .setFooter({ text: '𝙢𝙚𝙤𝙬 𝙢𝙚𝙤𝙬', iconURL:'https://cdn.discordapp.com/emojis/1243174809312038912.gif'});
 
               const createTicketButton = new ButtonBuilder()
                 .setCustomId('create_ticket')
-                .setLabel('📩 Create a Ticket')
+                .setLabel('.𝜗𝜚˚⋆')
                 .setStyle(ButtonStyle.Primary);
 
               await ticketChannel.send({ embeds: [fixedTicketEmbed], components: [new ActionRowBuilder().addComponents(createTicketButton)] });
